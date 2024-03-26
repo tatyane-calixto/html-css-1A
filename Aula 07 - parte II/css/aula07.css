@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'hanalei';
+    src: url("../font/Hanalei-Regular.ttf");
+}
+@font-face {
+    font-family: 'mochi';
+    src: url("../font/MochiyPopOne-Regular.ttf");
+}
+p{
+    color: #00FF00;
+    font-size: x-large;
+    font-family: mochi;
+}
+h1{
+    color:#FF0000;
+}
+#subtitulo{
+    color:#8B008B;
+    font-size: smaller;
+    text-align: center;
+    font-weight: bold;
+}
+.tabela{
+    color:#FF4500;
+    font-size: medium;
+    text-align: left;
+    font-weight: bold;
+    font-family: hanalei;
+}

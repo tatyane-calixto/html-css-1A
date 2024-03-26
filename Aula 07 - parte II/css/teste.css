@@ -1,0 +1,21 @@
+p{
+    color: red;
+
+}
+h1{
+    text-align: center;
+    color: blue;
+}
+#titulo{ 
+    font-weight: bold;
+    font-size: 24px;
+    color:#00FFFF;
+}
+.teste{
+    font-size: 50px;
+    color:coral;
+    font-weight: bold;
+    text-align:center;
+
+}
+

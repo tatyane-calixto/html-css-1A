@@ -1,0 +1,30 @@
+@font-face {
+    font-family:'protest' ;
+    src: url("../font/ProtestRiot-Regular.ttf");
+}
+@font-face {
+    font-family: 'mochi';
+    src: url("../font/MochiyPopOne-Regular.ttf");
+}
+@font-face {
+    font-family: 'rubik';
+    src: url("../font/RubikMoonrocks-Regular.ttf");
+}
+p{
+    color:#00FF00;
+    text-align: justify;
+    font-size: 30px;
+    width: 400px;
+    font-family: mochi;
+}
+#subtitulo{
+    color: #8B008B;
+    text-align: center;
+    font-family:rubik ;
+}
+.tabela{
+    color: #FF4500;
+    font-size: 24px;
+    text-align: center;
+    font-family: protest;
+}

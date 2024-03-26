@@ -25,9 +25,9 @@ p{
 .menu {
     background-color:#D96704;
     color: #fff;
-    padding: 10px 0;
+    padding: 10px;
     text-align: center;
-    font-size: larger;
+    font-size:x-large;
 }
 
 .menu ul {

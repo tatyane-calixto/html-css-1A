@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu com Font Awesome</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Menu Usando Font-awesome</title>
+</head>
+
+<body>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="#entrada"><i class="fa-regular fa-salad"></i> Entrada</a></li>
+                <li><a href="#prato-principal"><i class="fa-solid fa-utensils"></i> Principal</a></li>
+                <li><a href="#sobremesa"><i class="fa-solid fa-cupcake"></i> Sobremesa</a></li>
+               <li><a href="#contato"><i class="fa-solid fa-messages"></i>Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>Nosso Menu</h1>
+    <main>
+        <section id="entrada">
+           <h2>Salada Tropical</h2>
+            <img src="img/salada1.jpg">
+            <p>Salada com abacate, tomate cereja, grão de bicos e molho especial</p>
+            <h2>Salada Primavera</h2>
+            <img src="img/salada2.jpg">
+            <p>Salada com abacate, tomate cereja, grão de bicos e molho especial</p>
+            <h2>Salada Spice</h2>
+            <img src="img/salada3.jpg">
+            <p>Salada com abacate, tomate cereja, grão de bicos e molho especial</p>
+
+        </section>
+        <section id="prato-principal">
+            <h2>Macarrão ao Molho da Casa</h2>
+             <img src="img/prato1.jpg">
+             <p>Macarrão</p>
+             <h2>Macarrão Vegano</h2>
+             <img src="img/prato2.jpg">
+             <p>Macarrão Chinês</p>
+             <h2>Yakisoba</h2>
+             <img src="img/prato3.jpg">
+             <p>Yakisoba</p>
+ 
+         </section>
+    </main>
+    <section id="contato">
+       
+        <form>
+            <fieldset>
+                
+                <legend><h1>Entre em contato<h1></h1></legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="preferencia">Tipo:</label>
+                <select id="preferencia" name="preferencia" required>
+                    <option value="">Selecione...</option>
+                    <option value="opcao1">Elogio</option>
+                    <option value="opcao2">Sugestão</option>
+                    
+                </select><br><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+                <button type="submit">Enviar<i class="fa-solid fa-paper-plane-top"></i></button>
+            </fieldset>
+            
+                
+            
+        </form>
+
+    </section>
+</body>
+
+</html>
