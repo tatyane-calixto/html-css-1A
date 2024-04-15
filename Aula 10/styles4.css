@@ -1,0 +1,36 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.card-content p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+}
