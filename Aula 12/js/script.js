@@ -1,44 +1,49 @@
-function calculate() {
-    // Obtém os valores dos inputs e do seletor
-    const num1 = parseFloat(document.getElementById("num1").value);
-    const num2 = parseFloat(document.getElementById("num2").value);
-    const operator = document.getElementById("operator").value;
+function calcular() {
+    let num1 = document.getElementById("num1").value;
+    let num2 = document.getElementById("num2").value;
+    let operador = document.getElementById("operador").value;
+    let resultado = 0;
 
-    // Verifica se os números são válidos
-    if (isNaN(num1) || isNaN(num2)) {
-        alert("Por favor, insira números válidos.");
+    if (num1 == '' || num2 == '') {
+        alert("Digite os números nos campos!");
         return;
     }
 
-    // Realiza a operação selecionada
-    let result;
-    switch (operator) {
+    num1 = parseFloat(num1);
+    num2 = parseFloat(num2);
+
+    switch (operador) {
         case "+":
-            result = num1 + num2;
+            resultado = num1 + num2;
+            alert("O resultado é " + resultado);
             break;
         case "-":
-            result = num1 - num2;
+            resultado = num1 - num2;
+            alert("O resultado é " + resultado);
             break;
         case "*":
-            result = num1 * num2;
+            resultado = num1 * num2;
+            alert("O resultado é " + resultado);
             break;
         case "/":
-            if (num2 !== 0) {
-                result = num1 / num2;
-            } else {
-                alert("Erro: Divisão por zero.");
-                return;
+            if (num2 != 0) {
+                resultado = num1 / num2;
+                alert("O resultado é " + resultado);
+            }else{
+                alert("Erro: número não pode ser dividido por zero");
             }
+
             break;
         default:
-            alert("Operador inválido.");
-            return;
+            alert("Escolha um operador válido!");
+            break;
     }
+     limparCampo();
 
-    // Exibe o resultado em um alerta
-    alert("Resultado: " + result);
-
-    // Limpa os inputs
+}
+function limparCampo(){
     document.getElementById("num1").value = '';
     document.getElementById("num2").value = '';
+    document.getElementById("operador").value = "Escolha um Operador";
+
 }
