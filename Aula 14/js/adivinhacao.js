@@ -8,7 +8,7 @@ let tentativas;
 
 function iniciarJogo() {
     numeroSecreto = Math.floor(Math.random() * 50) + 1;
-    tentativas = 3;
+    tentativas = 5;
     guessInput.disabled = false;
     guessButton.disabled = false;
     restartButton.style.display = 'none';
