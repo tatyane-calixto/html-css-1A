@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo: Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="css/jogo.css">
+</head>
+<body>
+    <div class="container">
+        <img id="jokenpo" src="img/jokenpo.png">
+        <h1>Jogo: Pedra, Papel e Tesoura</h1>
+        <div class="game">
+            <div class="player">
+                <h2>Escolha do Jogador</h2>
+                <button class="btn" id="pedra"><img src="img/pedra.png"><br>Pedra</button>
+                <button class="btn" id="papel"><img src="img/papel_.png"><br>Papel</button>
+                <button class="btn" id="tesoura"><img src="img/tesoura_.png"><br>Tesoura</button>
+            </div>
+            <div class="computer">
+                <h2>Escolha do Computador</h2>
+                <div id="computer-choice">?</div>
+            </div>
+            <div class="result">
+                <h2>Resultado</h2>
+                <p id="resultado">Escolha uma opção para começar.</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/jogo.js"></script>
+</body>
+</html>
